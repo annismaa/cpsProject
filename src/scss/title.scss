@@ -1,0 +1,78 @@
+.title {
+  @media (min-width: 1120px) {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    font-family: 'TT Lakes', Arial, sans-serif;
+    font-weight: 900;
+    font-stretch: ultra-expanded;
+    font-size: 28px;
+    line-height: 40px;
+    color: $mainText;
+    margin: 24px 16px 24px 0;
+    padding-left: 16px;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 40px;
+      background-color: $beforeColor;
+      border-radius: 4px;
+      position: absolute;
+      left: -4px;
+      clip-path: inset(0 0 0 50%);
+    }
+
+    @media (min-width: 768px) {
+      padding-left: 24px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      margin: 42px 0px 8px 0;
+      padding-left: 30px;
+    }
+
+    &-form {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6000000238418579px;
+      margin-bottom: 24px;
+      margin-top: 40px;
+
+      @media (min-width: 768px) {
+        padding-left: 32px;
+        margin-top: 26px;
+      }
+
+      &::before {
+        top: -4px;
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @media (min-width: 1120px) {
+      display: flex;
+      align-items: center;
+      margin: 42px 0px 12px auto;
+      box-sizing: border-box;
+    }
+  }
+
+  &__label {
+    display: flex;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: 500;
+    color: $mainText;
+    margin-right: 8px;
+  }
+}

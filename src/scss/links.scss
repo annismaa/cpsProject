@@ -1,0 +1,57 @@
+.link {
+  &_type_mail {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $mainText;
+    margin-top: 16px;
+  }
+
+  &_type_tel {
+    font-size: 24px;
+    line-height: 32px;
+    color: $mainText;
+    font-weight: 1000;
+    margin-top: 10px;
+  }
+
+  &_sidebar_nav {
+    color: $mainText;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    height: 24px;
+
+    &:hover {
+      color: $otherText;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 32px;
+        background-color: #41f6d7;
+        border-radius: 4px;
+        position: absolute;
+        left: -20px;
+        top: -4px;
+
+        @media (min-width: 768px) {
+          left: -28px;
+        }
+      }
+    }
+  }
+
+  &_type_form {
+    color: $buttonColor;
+    display: inline;
+
+    &:hover {
+      color: $otherText;
+    }
+  }
+
+  &_type_footer {
+    color: $otherText;
+    text-align: center;
+  }
+}
