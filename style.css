@@ -840,7 +840,7 @@ label {
     justify-content: center;
     padding: 0;
     transition: 1s;
-    background-image: url("/icons/go.svg");
+    background-image: url(./static/go.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%; }
     .button_pink_white:hover {
@@ -865,7 +865,7 @@ label {
     font-weight: bolder;
     font-size: 12px;
     transition: 1s;
-    background-image: url("/icons/dropdown.svg");
+    background-image: url(./static/dropdown.svg);
     background-repeat: no-repeat;
     background-position: 85% 50%; }
     @media (min-width: 768px) {
@@ -1034,28 +1034,28 @@ label {
   text-align: center; }
 
 .burger-icon {
-  background-image: url("/icons/burger.svg"); }
+  background-image: url(./static/burger.svg); }
 
 .call-icon {
-  background-image: url("/icons/call.svg"); }
+  background-image: url(./static/call.svg); }
 
 .chat-icon {
-  background-image: url("/icons/chat.svg"); }
+  background-image: url(./static/chat.svg); }
 
 .profile-icon {
-  background-image: url("/icons/profile.svg"); }
+  background-image: url(./static/profile.svg); }
 
 .repair-icon {
-  background-image: url("/icons/repair.svg"); }
+  background-image: url(./static/repair.svg); }
 
 .checkstatus-icon {
-  background-image: url("/icons/checkstatus.svg"); }
+  background-image: url(./static/checkstatus.svg); }
 
 .close-icon {
-  background-image: url("/icons/close.svg"); }
+  background-image: url(./static/close.svg); }
 
 .search-icon {
-  background-image: url("/icons/search.svg"); }
+  background-image: url(./static/search.svg); }
 
 .lenovo {
   width: 108px;
