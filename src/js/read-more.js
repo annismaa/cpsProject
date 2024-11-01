@@ -10,7 +10,7 @@ function readMore() {
   if (mainText.classList.contains('main-page__text_active')) {
     readButtonText.textContent = 'Скрыть'
   } else {
-    readButtonText.textContent = 'Показать всё'
+    readButtonText.textContent = 'Читать далее'
   }
 
   readButtonImage.classList.toggle('arrows_rotated')
