@@ -30,6 +30,7 @@
     @media (min-width: 768px) {
       border-radius: 5px;
       flex-direction: column;
+      height: auto;
 
       &::before {
         content: '';
