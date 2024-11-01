@@ -51,7 +51,7 @@
       border-radius: 1px;
       position: absolute;
       left: -20px;
-      background-color: #eaeaea;
+      background-color: $borderColor;
     }
   }
 
@@ -61,7 +61,7 @@
         content: '';
         width: 2px;
         height: 32px;
-        background-color: #eaeaea;
+        background-color: $borderColor;
         margin-top: 9px;
         border-radius: 1px;
         position: absolute;

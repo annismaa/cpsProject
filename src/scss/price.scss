@@ -1,6 +1,6 @@
 .price {
   margin-top: 12px;
-  border-top: #d9fff5 1px solid;
+  border-top: $borderTopColor 1px solid;
   box-sizing: border-box;
 
   @media (min-width: 768px) {
@@ -13,7 +13,11 @@
     line-height: $lineHeight;
     color: $otherText;
     text-transform: uppercase;
-    background: linear-gradient(to right, transparent 0%, $bgColor1 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      $backgroundColorWhite 100%
+    ); // TODO: bgColorWhite
     margin: 0;
     padding: 16px;
     box-sizing: border-box;
@@ -31,7 +35,7 @@
         content: '';
         width: 16px;
         height: 320px;
-        background-color: $bgColor1;
+        background-color: $backgroundColorWhite;
         border-radius: 5px;
         position: absolute;
         top: 32px;
@@ -43,7 +47,7 @@
         content: '';
         width: 16px;
         height: 320px;
-        background-color: $bgColor1;
+        background-color: $backgroundColorWhite;
         border-radius: 5px;
         position: absolute;
         top: 32px;
@@ -58,7 +62,7 @@
     flex-direction: column;
     align-items: flex-end;
     height: 200px;
-    background-color: $bgColor1;
+    background-color: $backgroundColorWhite;
     box-sizing: border-box;
     padding: 16px;
     padding-top: 0;
@@ -73,7 +77,7 @@
       border: none;
 
       &:not(:last-child) {
-        border-bottom: #eaeaea solid 1px;
+        border-bottom: $borderColor solid 1px;
       }
     }
 
@@ -85,7 +89,7 @@
       }
     }
 
-    &-768 {
+    &_medium-screen {
       @media (max-width: 767px) {
         display: none;
       }
@@ -101,20 +105,20 @@
       }
     }
 
-    &-label {
+    &__label {
       color: $otherText;
       font-size: 14px;
       line-height: 16px;
     }
 
-    &-content {
+    &__content {
       font-size: 14px;
       line-height: 18px;
       color: $mainText;
       margin-top: 4px;
     }
 
-    &-hidden {
+    &_hidden {
       font-size: 14px;
       line-height: 16px;
       margin-top: 16px;
@@ -151,7 +155,11 @@
     position: absolute;
     top: 16px;
     right: 0;
-    background: linear-gradient(to right, transparent 0%, #f8f8f8 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      $backgroundColorGrey 100%
+    );
     z-index: 1;
 
     @media (min-width: 768px) {
@@ -160,7 +168,7 @@
   }
 }
 
-.swiper3 {
+.swiper_price {
   padding-left: 8px;
   padding-top: 16px;
   position: relative;

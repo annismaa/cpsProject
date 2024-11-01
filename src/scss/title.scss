@@ -21,7 +21,7 @@
       content: '';
       width: 8px;
       height: 40px;
-      background-color: $beforeColor;
+      background-color: $textBeforeColor;
       border-radius: 4px;
       position: absolute;
       left: -4px;
@@ -38,12 +38,12 @@
       padding-left: 30px;
     }
 
-    &-form {
+    &_form {
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.6000000238418579px;
       margin-bottom: 24px;
-      margin-top: 40px;
+      margin-top: 80px;
 
       @media (min-width: 768px) {
         padding-left: 32px;
@@ -56,7 +56,7 @@
     }
   }
 
-  &__btn {
+  &__button {
     display: none;
 
     @media (min-width: 1120px) {

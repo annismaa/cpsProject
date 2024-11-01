@@ -1,7 +1,7 @@
-.btn {
-  &_type_pink {
-    width: $btnWidth;
-    height: $btnHeight;
+.button {
+  &_pink {
+    width: $buttonWidth;
+    height: $buttonHeight;
     padding: 0;
     background-color: $buttonColor;
     border-radius: 50%;
@@ -12,7 +12,7 @@
     background-position: 50% 50%;
 
     &:hover {
-      background-color: $btnHovColor;
+      background-color: $buttonHovColor;
       transform: scale(1.1);
     }
 
@@ -20,14 +20,14 @@
       margin-right: 30px;
     }
 
-    &-side {
+    &_side {
       margin: 0;
     }
 
-    &-white {
-      background-color: $bgColor1;
-      width: $btnWidth;
-      height: $btnHeight;
+    &_white {
+      background-color: $backgroundColorWhite;
+      width: $buttonWidth;
+      height: $buttonHeight;
       border-radius: 50%;
       border: $buttonColor 2px solid;
       align-items: center;
@@ -39,12 +39,12 @@
       background-position: 50% 50%;
 
       &:hover {
-        background-color: $btnHovColor;
+        background-color: $buttonHovColor;
         transform: scale(1.1);
       }
     }
 
-    &-long {
+    &_long {
       width: 119px;
       height: 32px;
       padding: 0;
@@ -57,7 +57,7 @@
       z-index: 2;
       align-items: center;
       background-color: $buttonColor;
-      color: $bgColor1;
+      color: $backgroundColorWhite;
       text-transform: uppercase;
       font-family: TT Lakes, Arial, sans-serif;
       font-weight: bolder;
@@ -72,31 +72,31 @@
       }
 
       &:hover {
-        background-color: $btnHovColor;
+        background-color: $buttonHovColor;
         transform: scale(1.1);
       }
     }
 
-    &-feed1 {
-      display: none;
+    &_feedback {
       position: absolute;
-      top: 32px;
-      right: 472px;
-      margin: 0;
+      top: 24px;
+      right: 264px;
+      z-index: 1;
 
-      @media (min-width: 768px) {
-        display: flex;
+      @media (max-width: 360px) {
+        left: 16px;
+        right: unset;
       }
-    }
 
-    &-feed2 {
       @media (min-width: 768px) {
-        display: none;
+        top: 32px;
+        right: 472px;
+        margin: 0;
       }
     }
   }
 
-  &_type_slide {
+  &_slide {
     align-items: center;
     justify-content: center;
     font-size: $fontSize;
@@ -108,17 +108,19 @@
     border-radius: 5px;
 
     &:active {
-      background-color: $bgColor1;
-      box-shadow: 2px 2px 0 0 $btnBorder inset, -2px -2px 0 0 $btnBorder inset;
+      background-color: $backgroundColorWhite;
+      box-shadow: 2px 2px 0 0 $buttonBorder inset,
+        -2px -2px 0 0 $buttonBorder inset;
       box-sizing: border-box;
     }
   }
 
-  &_type_read-more {
+  &_read-more {
     display: inline-flex;
     gap: 8px;
     margin: 16px 0 auto 16px;
     box-sizing: border-box;
+    font-family: TT Lakes, Arial, sans-serif;
     font-size: $fontSize;
     font-weight: 500;
     line-height: $lineHeight;
@@ -137,7 +139,7 @@
     }
   }
 
-  &_type_show-more {
+  &_show-more {
     display: none;
 
     @media (min-width: 768px) {
@@ -147,7 +149,7 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 24px;
-      color: #1b1c21;
+      color: $mainText;
       margin-left: 24px;
       margin-top: 24px;
       padding: 0;
@@ -164,7 +166,7 @@
     }
   }
 
-  &_type_lang {
+  &_lang {
     color: $mainText;
     font-family: TT Lakes, Arial, sans-serif;
     font-size: $fontSize;
@@ -175,7 +177,7 @@
     }
   }
 
-  &_type_offer {
+  &_offer {
     display: inline-block;
     position: relative;
     color: $mainText;
@@ -203,7 +205,7 @@
     }
   }
 
-  &_type_submit {
+  &_submit {
     position: absolute;
     width: 136px;
     padding-left: 22px;

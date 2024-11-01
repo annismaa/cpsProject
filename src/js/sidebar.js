@@ -4,12 +4,12 @@ const closeButton = document.getElementById('sidebar-close')
 const sidebar = document.querySelector('.sidebar')
 
 function openMenu() {
-  sideMenu.classList.add('side-menu-active')
+  sideMenu.classList.add('side-menu_active')
 }
 
 function closeMenu(event) {
   if (event.target === closeButton || !event.target.closest('.sidebar'))
-    sideMenu.classList.remove('side-menu-active')
+    sideMenu.classList.remove('side-menu_active')
 }
 
 burgerButton.onclick = openMenu

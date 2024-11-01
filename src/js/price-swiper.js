@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css'
 import { Pagination } from 'swiper/modules'
 
 function initSwiper() {
-  const swiper = new Swiper('.swiper3', {
+  const swiper = new Swiper('.swiper_price', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,

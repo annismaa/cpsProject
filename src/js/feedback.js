@@ -1,21 +1,17 @@
 const feedbackButtons = document.querySelectorAll('.chat-icon')
-const closeButtons2 = document.querySelectorAll('.close-icon2')
+const closeButton = document.querySelectorAll('.close-icon_feedback')
 const feedbackDiv = document.querySelector('.feedback')
 const sideMenu = document.querySelector('.side-menu')
 
 function openForm(event) {
   event.stopPropagation()
-  feedbackDiv.classList.add('feedback-active')
-  sideMenu.classList.remove('side-menu-active')
+  feedbackDiv.classList.add('feedback_active')
+  sideMenu.classList.remove('side-menu_active')
 }
 
 function closeForm(event) {
-  const isCloseButton = Array.from(closeButtons2).includes(event.target)
-  const isOutsideForm = !event.target.closest('.feedback__form')
-
-  if (isCloseButton || isOutsideForm) {
-    feedbackDiv.classList.remove('feedback-active')
-  }
+  if (event.target === closeButton || !event.target.closest('.feedback__form'))
+    feedbackDiv.classList.remove('feedback_active')
 }
 
 feedbackButtons.forEach((button) => {
@@ -24,6 +20,4 @@ feedbackButtons.forEach((button) => {
 
 feedbackDiv.onclick = closeForm
 
-closeButtons2.forEach((button) => {
-  button.onclick = closeForm
-})
+closeButton.onclick = closeForm

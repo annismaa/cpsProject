@@ -23,7 +23,11 @@
   &__gradient {
     height: 40px;
     width: 24px;
-    background-image: linear-gradient(to right, transparent, $bgColor2);
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      $backgroundColorGrey
+    );
     position: absolute;
     top: 171px;
     right: 0px;

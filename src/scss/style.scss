@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: TT Lakes, Arial, sans-serif;
-  background-color: $bgColor2;
+  background-color: $backgroundColorGrey;
 }
 
 button {
@@ -35,8 +35,8 @@ header {
   margin: 0;
   margin-bottom: auto;
   box-sizing: border-box;
-  background-color: $bgColor1;
-  border-bottom: 1px solid #d9fff5;
+  background-color: $backgroundColorWhite;
+  border-bottom: $borderTopColor 1px solid;
 
   @media (min-width: 1120px) {
     display: none;
@@ -45,7 +45,7 @@ header {
 
 main {
   margin: 0;
-  background-color: $bgColor2;
+  background-color: $backgroundColorGrey;
 
   @media (min-width: 1120px) {
     margin: 0;

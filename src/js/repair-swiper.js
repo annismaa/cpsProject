@@ -47,22 +47,22 @@ if (document.body.clientWidth < 768) {
 
 // showButton.onclick = showHide
 
-const showButtons = document.querySelectorAll('.btn_type_show-more')
+const showButtons = document.querySelectorAll('.button_show-more')
 const swiperWrappers = document.querySelectorAll('.swiper-wrapper')
 
 showButtons.forEach((button, index) => {
   button.onclick = () => {
     const swiperWrapper = swiperWrappers[index]
-    swiperWrapper.classList.toggle('swiper-wrapper-hidden')
+    swiperWrapper.classList.toggle('swiper-wrapper_hidden')
     const showButtonText = button.querySelector('.show')
     const showButtonImage = button.querySelector('img')
 
-    if (swiperWrapper.classList.contains('swiper-wrapper-hidden')) {
+    if (swiperWrapper.classList.contains('swiper-wrapper_hidden')) {
       showButtonText.textContent = 'Показать все'
     } else {
       showButtonText.textContent = 'Скрыть'
     }
 
-    showButtonImage.classList.toggle('arrows-rotated')
+    showButtonImage.classList.toggle('arrows_rotated')
   }
 })

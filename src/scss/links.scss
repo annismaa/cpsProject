@@ -1,12 +1,12 @@
 .link {
-  &_type_mail {
+  &_mail {
     font-size: $fontSize;
     line-height: $lineHeight;
     color: $mainText;
     margin-top: 16px;
   }
 
-  &_type_tel {
+  &_tel {
     font-size: 24px;
     line-height: 32px;
     color: $mainText;
@@ -28,7 +28,7 @@
         content: '';
         width: 8px;
         height: 32px;
-        background-color: #41f6d7;
+        background-color: $textBeforeColor;
         border-radius: 4px;
         position: absolute;
         left: -20px;
@@ -41,7 +41,7 @@
     }
   }
 
-  &_type_form {
+  &_form {
     color: $buttonColor;
     display: inline;
 
@@ -50,7 +50,7 @@
     }
   }
 
-  &_type_footer {
+  &_footer {
     color: $otherText;
     text-align: center;
   }

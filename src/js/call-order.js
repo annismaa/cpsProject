@@ -1,21 +1,20 @@
 const callButtons = document.querySelectorAll('.call-icon')
-const closeButtons3 = document.querySelectorAll('.close-icon3')
+const closeButton = document.querySelectorAll('.close-icon_call-order')
 const orderDiv = document.querySelector('.call-order')
 const sideMenu = document.querySelector('.side-menu')
 
 function openForm(event) {
   event.stopPropagation()
-  orderDiv.classList.add('call-order-active')
-  sideMenu.classList.remove('side-menu-active')
+  orderDiv.classList.add('call-order_active')
+  sideMenu.classList.remove('side-menu_active')
 }
 
 function closeForm(event) {
-  const isCloseButton = Array.from(closeButtons3).includes(event.target)
-  const isOutsideForm = !event.target.closest('.call-order__form')
-
-  if (isCloseButton || isOutsideForm) {
-    orderDiv.classList.remove('call-order-active')
-  }
+  if (
+    event.target === closeButton ||
+    !event.target.closest('.call-order__form')
+  )
+    orderDiv.classList.remove('call-order_active')
 }
 
 callButtons.forEach((button) => {
@@ -24,6 +23,4 @@ callButtons.forEach((button) => {
 
 orderDiv.onclick = closeForm
 
-closeButtons3.forEach((button) => {
-  button.onclick = closeForm
-})
+closeButton.onclick = closeForm
