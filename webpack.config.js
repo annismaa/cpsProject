@@ -89,7 +89,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: './src/icons',
-        to: 'img'
+        to: 'icons'
       }
     ])
   ]
