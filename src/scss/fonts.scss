@@ -2,10 +2,10 @@
   font-family: 'TT Lakes';
   src: url('/dist/fonts/TTLakes-Medium.eot');
   src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-    url('/src/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/src/fonts/TTLakes-Medium.woff2') format('woff2'),
-    url('/src/fonts/TTLakes-Medium.woff') format('woff'),
-    url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+    url('/dist/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/dist/fonts/TTLakes-Medium.woff2') format('woff2'),
+    url('/dist/fonts/TTLakes-Medium.woff') format('woff'),
+    url('/dist/fonts/TTLakes-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -14,11 +14,11 @@
   font-family: 'TT Lakes Compressed';
   src: url('/dist/fonts/TTLakesCompressed-Black.eot');
   src: local('TT Lakes Compressed Black'), local('TTLakesCompressed-Black'),
-    url('/src/fonts/TTLakesCompressed-Black.eot?#iefix')
+    url('/dist/fonts/TTLakesCompressed-Black.eot?#iefix')
       format('embedded-opentype'),
-    url('/src/fonts/TTLakesCompressed-Black.woff2') format('woff2'),
-    url('/src/fonts/TTLakesCompressed-Black.woff') format('woff'),
-    url('/src/fonts/TTLakesCompressed-Black.ttf') format('truetype');
+    url('/dist/fonts/TTLakesCompressed-Black.woff2') format('woff2'),
+    url('/dist/fonts/TTLakesCompressed-Black.woff') format('woff'),
+    url('/dist/fonts/TTLakesCompressed-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
@@ -27,11 +27,11 @@
   font-family: 'TT Lakes Condensed';
   src: url('/dist/fonts/TTLakesCondensed-Bold.eot');
   src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
-    url('/src/fonts/TTLakesCondensed-Bold.eot?#iefix')
+    url('/dist/fonts/TTLakesCondensed-Bold.eot?#iefix')
       format('embedded-opentype'),
-    url('/src/fonts/TTLakesCondensed-Bold.woff2') format('woff2'),
-    url('/src/fonts/TTLakesCondensed-Bold.woff') format('woff'),
-    url('/src/fonts/TTLakesCondensed-Bold.ttf') format('truetype');
+    url('/dist/fonts/TTLakesCondensed-Bold.woff2') format('woff2'),
+    url('/dist/fonts/TTLakesCondensed-Bold.woff') format('woff'),
+    url('/dist/fonts/TTLakesCondensed-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
