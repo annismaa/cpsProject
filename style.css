@@ -1207,15 +1207,15 @@ label {
 
 .slide-menu {
   display: flex;
-  padding: 0 16px;
+  padding: 0;
+  margin-bottom: 16px;
   overflow-y: hidden;
   box-sizing: border-box;
   white-space: nowrap;
   overflow: auto; }
   @media (min-width: 768px) {
     .slide-menu {
-      margin-left: 8px;
-      margin-bottom: 16px; } }
+      margin-left: 8px; } }
   @media (min-width: 1120px) {
     .slide-menu {
       flex-wrap: wrap;
