@@ -1553,7 +1553,8 @@ label {
     @media (min-width: 768px) {
       .price__table {
         border-radius: 5px;
-        flex-direction: column; }
+        flex-direction: column;
+        height: auto; }
         .price__table::before {
           content: '';
           width: 16px;
